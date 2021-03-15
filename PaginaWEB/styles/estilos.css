@@ -4,29 +4,62 @@
     --primario: #1248ad;
     --secundario: #f1842f;
     --gris: #757575;
+    --naranja: #ed6c26;
     --fuente_principal: 3.8rem;
 }
+
 html {
     font-size: 62.5%;
 }
+
 body {
     font-size: 16px; /* 1rem = 10px*/
     font-family: 'Domine', serif;
 }
+
 .titulo {
     text-align: center;
     font-size: 3.8rem;
-    color: var(--primario);
-} 
-.titulo span {
-    font-size: 2.2rem; 
+    color: var(--negro);
+    background-color: var(--naranja);
+    padding: 1rem;
+    margin: auto;
 }
+
 .titulo_secundario{
     color: var(--secundario)
 }
+
 .derechos {
     text-align: center;
     font-size: 1rem;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav_bg {
+    background-color: var(--gris);
+}
+
+.nav_principal { 
+    display: flex; 
+    justify-content: space-between;
+}
+
+.nav_principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.nav_principal a:hover {
+    background-color: var(--naranja);
+    color: var(--negro);
 }
 
 
