@@ -20,7 +20,14 @@ html {
 body {
     font-size: 16px; /* 1rem = 10px*/
     font-family: 'Domine', serif;
-    background-image: linear-gradient(to top, #fad5c1 0%, var(--blanco) 50%);
+    background: rgba(252,174,79,1);
+    background: -moz-linear-gradient(top, rgba(252,174,79,1) 0%, rgba(237,130,49,0.71) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,174,79,1)), color-stop(100%, rgba(237,130,49,0.71)));
+    background: -webkit-linear-gradient(top, rgba(252,174,79,1) 0%, rgba(237,130,49,0.71) 100%);
+    background: -o-linear-gradient(top, rgba(252,174,79,1) 0%, rgba(237,130,49,0.71) 100%);
+    background: -ms-linear-gradient(top, rgba(252,174,79,1) 0%, rgba(237,130,49,0.71) 100%);
+    background: linear-gradient(to bottom, rgba(252,174,79,1) 0%, rgba(237,130,49,0.71) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcae4f', endColorstr='#ed8231', GradientType=0 );
 }
 
 h1 {
@@ -99,6 +106,7 @@ h1,h2,h3 {
     height: 1200px;
     padding: 2rem;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido_hero {
@@ -136,4 +144,27 @@ h1,h2,h3 {
     .boton {
         width: auto;
     }
+}
+
+.contactenos_datos {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(99,99,99,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(99,99,99,1);
+    box-shadow: 0px 0px 15px 0px rgba(99,99,99,1);
+    padding: 1rem 5rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+    .servicios {
+        display: grid;
+        grid: 500px 90px 500px / 400px 400px 400px ;
+        font-size: 1.7rem;
+        column-gap: 4rem;
+    }
+}
+
+.servicios h1 {
+    color: var(--blanco);
 }
