@@ -121,30 +121,35 @@
         </section>
     </main>
 
-    <section class="contactenos_datos">
+
+    <section>
         <h2>Podemos ponernos en contacto</h2>
-        <form>
+        <form class="formulario">
             <fieldset>
                 <legend>Recibe asistencia personalizada</legend>
-                <div>
-                    <label>Nombre:</label>
-                    <input type="text" placeholder="Tu nombre">
+                <div class="contenedor_campos">
+                    <div class="campo">
+                        <label>Nombre:</label>
+                        <input type="text" placeholder="Tu nombre">
+                    </div>
+                    <div class="campo">
+                        <label>Telefono:</label>
+                        <input type="number" placeholder="Tu numero de telefono">
+                    </div>
+                    <div class="campo">
+                        <label>Correo Electronico:</label>
+                        <input type="mail" placeholder="Tu correo electronico">
+                    </div>
+                    <div class="campo">
+                        <label>Comentario</label>
+                        <textarea></textarea>
+                    </div>
                 </div>
-                <div>
-                    <label>Telefono:</label>
-                    <input type="number" placeholder="Tu numero de telefono">
-                </div>
-                <div>
-                    <label>Correo Electronico:</label>
-                    <input type="mail" placeholder="Tu correo electronico">
-                </div>
-                <div>
-                    <label>Comentario</label>
-                    <textarea></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Solicitar">
-                </div>
+                
+                    <div>
+                        <input type="submit" value="Solicitar">
+                    </div>
+
             </fieldset>
         </form>
 
