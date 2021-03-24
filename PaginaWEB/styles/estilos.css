@@ -11,6 +11,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
 
   *, *:before, *:after {
@@ -52,6 +53,11 @@ h1,h2,h3 {
     background-color: var(--naranja);
     padding: 1rem;
     margin: auto;
+}
+
+.titulo {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .titulo_secundario{
@@ -107,6 +113,11 @@ h1,h2,h3 {
     padding: 2rem;
     position: relative;
     margin-bottom: 2rem;
+}
+
+.hero {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .contenido_hero {
@@ -213,6 +224,11 @@ h1,h2,h3 {
     margin: 0 auto; 
     padding: 1rem;
     border-radius: 1rem; 
+}
+
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .formulario fieldset {
